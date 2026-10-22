@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your Name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name · Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name: projects, writing and contact details.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='25' font-size='26' text-anchor='middle' fill='%23b4321f' font-family='Georgia,serif'%3E%C2%B6%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Newsreader (body), Inter (UI), JetBrains Mono (code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hi, I'm Your Name</h1>
-    <p>Welcome to my site.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Your Name</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hang">
+        <p class="section-label">Hello</p>
+        <div class="content">
+          <h1>Hi, I’m Your Name.</h1>
+          <p class="lede">I build things for the web and write about how they work.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="hang">
+        <p class="section-label">About</p>
+        <div class="content drop-cap">
+          <h2 id="about-title" hidden>About</h2>
+          <p>I’m a developer based in Bucharest. Replace this paragraph with a few sentences about what you do, what you care about, and what you’re looking for. Keep it short: the page is set at a comfortable reading width, so a couple of paragraphs is plenty.</p>
+          <p>A second paragraph can mention tools you like, things you’re learning, or a quote you keep coming back to.</p>
+          <blockquote>A short line you like goes here.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="hang">
+        <p class="section-label">Selected work</p>
+        <div>
+          <h2 id="projects-title" hidden>Projects</h2>
+          <ol class="entries">
+            <li>
+              <div class="meta">Month 2026</div>
+              <h3><a href="https://github.com/yourusername/project-one">Project One</a></h3>
+              <p>One or two sentences on what it is, who it’s for, and what you did.</p>
+              <ul class="tags">
+                <li>#html</li>
+                <li>#css</li>
+              </ul>
+            </li>
+            <li>
+              <div class="meta">Month 2026</div>
+              <h3><a href="https://github.com/yourusername/project-two">Project Two</a></h3>
+              <p>Another short description. Link each title to the repo or live demo.</p>
+              <ul class="tags">
+                <li>#typescript</li>
+                <li>#astro</li>
+              </ul>
+            </li>
+            <li>
+              <div class="meta">Month 2025</div>
+              <h3><a href="https://github.com/yourusername/project-three">Project Three</a></h3>
+              <p>Add or delete list items as needed; the numbering updates by itself.</p>
+              <ul class="tags">
+                <li>#bun</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="hang">
+        <p class="section-label">Contact</p>
+        <div class="content">
+          <h2 id="contact-title" hidden>Contact</h2>
+          <p>The best way to reach me is by email. I usually reply within a few days.</p>
+          <ul class="links">
+            <li><span>Email</span><a href="mailto:you@example.com">you@example.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/yourusername">github.com/yourusername</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Your Name</span>
+    <span>Design inspired by <a href="https://github.com/ondelva/astro-theme-pilcrow">Pilcrow</a> by ondelva</span>
+  </footer>
 </body>
 </html>
